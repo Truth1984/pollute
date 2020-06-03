@@ -6,6 +6,7 @@
  * @property {(...maps:{})=>MAP} add
  * @property {(...items:string)=>MAP} remove
  * @property {(...keys:string)=>MAP} get
+ * @property {(...keys:string)=>boolean} has
  *
  */
 
@@ -17,4 +18,6 @@
  * @property {(...maps:{})=>CHAINMAP} add
  * @property {(...items:string)=>CHAINMAP} remove
  * @property {(...keys:string)=>CHAINMAP} get
+ * @property {(...keys:string)=>boolean} has
+ *
  */

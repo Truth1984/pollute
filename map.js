@@ -13,6 +13,7 @@ let pollute = (input = {}) => {
   p("add", (...maps) => maps.reduce((hook, item) => Object.assign(hook, item), map));
   p("remove", (...items) => items.map((val) => delete map[val]));
   p("get", (...keys) => keys.reduce((hook, item) => Object.assign(hook, { [item]: map[item] }), pollute({})));
+  p("has", (...keys) => keys.find((i) => map[i] === undefined || map[i] === null) === undefined);
 
   return map;
 };

@@ -20,3 +20,4 @@ let item3 = item2.get("d").add({ g: 16 });
 item2.add({ h: 323 }, { h: 33 });
 
 console.log(item1, item2, item3);
+// console.log(item1.has("a", "b", "d"));
