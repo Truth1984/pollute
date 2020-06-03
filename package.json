@@ -1,0 +1,25 @@
+{
+  "name": "pollute",
+  "version": "0.5.0",
+  "description": "dev speed first, prototype pollution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Truth1984/pollute.git"
+  },
+  "keywords": [
+    "prototype",
+    "util",
+    "maputil",
+    "productivity"
+  ],
+  "author": "awada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Truth1984/pollute/issues"
+  },
+  "homepage": "https://github.com/Truth1984/pollute#readme"
+}
