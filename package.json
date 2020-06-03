@@ -1,6 +1,6 @@
 {
   "name": "pollute",
-  "version": "0.5.0",
+  "version": "0.8.0",
   "description": "dev speed first, prototype pollution",
   "main": "index.js",
   "scripts": {

@@ -21,3 +21,11 @@ item2.add({ h: 323 }, { h: 33 });
 
 console.log(item1, item2, item3);
 // console.log(item1.has("a", "b", "d"));
+console.log(item1.toString());
+item3.toString();
+item3.add({ v: 14 });
+console.log(item3);
+
+console.log(item1.getExcept("b", "c", "a", "d"));
+item3.clone().add({ v: 18 });
+console.log(item3);

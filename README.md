@@ -44,3 +44,25 @@ console.log(item1, item2, item3);
 #### get
 
 (...keys:string)=>MAP
+
+#### has
+
+(...keys:string)=>boolean
+
+#### toString
+
+(space?:"")=>string
+
+#### clone
+
+deep copy
+
+()=>MAP
+
+#### getExist
+
+(...keys:string)=>MAP
+
+#### getExcept
+
+(...keys:string)=>MAP
