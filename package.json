@@ -1,10 +1,10 @@
 {
   "name": "pollute",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "dev speed first, prototype pollution",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",

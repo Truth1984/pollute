@@ -88,7 +88,7 @@ deep copy
 
 #### map (_verb._)
 
-(func:(key, value)=>["key","value"],removeOld?:true)=>CHAINMAP
+(func:(key, value)=>["key","value"],removeOld?:true)=>MAP
 
 the output should return an array, and array[0] is key, array[1] is value
 
