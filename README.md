@@ -19,7 +19,26 @@ console.log(item1, item2, item3);
 // { a: 15, b: 13, e: 13, f: 324 } { c: 3, d: 156, h: 33 } { d: 156, g: 16 }
 ```
 
+## notice
+
+`{}` is already polluted `console.log(typeof {}["constructor"]);` output `function`
+
 ## api
+
+#### constructor
+
+map(input = {}, backup = "\_")
+
+in case the value inside input was overwritten by user, you can still use backup function. i.e.
+
+```js
+let item = m({ get: 10 }, "_");
+item.get; // output 10;
+item._.get; // output a function
+item._.get("get").keys(); //output ["get"]
+item._.get("get", "udf")._.keys(); //output ["get", "udf"]
+Object.keys(item); // output ["get"]
+```
 
 #### keys
 
@@ -66,3 +85,18 @@ deep copy
 #### getExcept
 
 (...keys:string)=>MAP
+
+#### map (_verb._)
+
+(func:(key, value)=>["key","value"],removeOld?:true)=>CHAINMAP
+
+the output should return an array, and array[0] is key, array[1] is value
+
+if removeOld is true then the old value will be deleted
+
+else
+
+```js
+let item = m({ a: 10, b: 20 }, "_");
+item.map((key, val) => [key + 10, val], false); // output {a: 10, b: 20, a10: 10, b10: 20}
+```

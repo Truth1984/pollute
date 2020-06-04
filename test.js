@@ -29,3 +29,10 @@ console.log(item3);
 console.log(item1.getExcept("b", "c", "a", "d"));
 item3.clone().add({ v: 18 });
 console.log(item3);
+
+console.log(
+  item3.map((key, value) => {
+    console.log(key, value);
+    return [key, value];
+  })
+);

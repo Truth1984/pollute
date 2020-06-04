@@ -11,7 +11,7 @@
  * @property {()=>MAP} clone
  * @property {(...keys:string)=>MAP} getExist
  * @property {(...keys:string)=>MAP} getExcept
- *
+ * @property {(func:(key, value)=>["key","value"],removeOld?:true)=>MAP} map
  */
 
 /**
@@ -27,5 +27,5 @@
  * @property {()=>CHAINMAP} clone
  * @property {(...keys:string)=>CHAINMAP} getExist
  * @property {(...keys:string)=>CHAINMAP} getExcept
- *
+ * @property {(func:(key, value)=>["key","value"],removeOld?:true)=>CHAINMAP} map
  */
