@@ -5,8 +5,7 @@ map utils, boost productivity, prototype pollution, working progress
 ## example
 
 ```js
-let { map } = require("pollute");
-let m = map;
+let m = require("pollute");
 
 let item1 = m({ a: 15, b: 13 });
 let item2 = m({ c: 3, d: 156 });

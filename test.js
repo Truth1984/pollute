@@ -1,4 +1,4 @@
-let m = require("./map");
+let m = require("./index");
 
 let item1 = m({ a: 15, b: 13 });
 let item2 = m({ c: 3, d: 156 });

@@ -1,2 +1,6 @@
-let map = require("./map");
-module.exports = { map };
+require("./typedef");
+
+/**
+ * @return {MAP}
+ */
+module.exports = require("./map");
