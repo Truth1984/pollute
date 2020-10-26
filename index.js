@@ -1,6 +1,8 @@
 require("./typedef");
+const map = require("./map");
+const array = require("./array");
 
 /**
- * @return {MAP}
+ * @return {map:MAP, array:AOM}
  */
-module.exports = require("./map");
+module.exports = { map, array };

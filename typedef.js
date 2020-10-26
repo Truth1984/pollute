@@ -29,3 +29,25 @@
  * @property {(...keys:string)=>CHAINMAP} getExcept
  * @property {(func:(key, value)=>["key","value"],removeOld?:true)=>CHAINMAP} map
  */
+
+/**
+ * @typedef CHAINAOM
+ * @property {()=>AOM & []} keys
+ * @property {(...items)=>AOM & []} add
+ * @property {(...index)=>AOM & []} remove
+ * @property {(...index)=>AOM & []} get
+ * @property {(...conditions)=>boolean} has
+ * @property {(space?:"")=>string} toString
+ * @property {()=>AOM & []} clone
+ */
+
+/**
+ * @typedef AOM
+ * @property {()=>CHAINAOM & []} keys
+ * @property {(...items)=>CHAINAOM & []} add
+ * @property {(...index)=>CHAINAOM & []} remove
+ * @property {(...index)=>CHAINAOM & []} get
+ * @property {(...conditions)=>boolean} has
+ * @property {(space?:"")=>string} toString
+ * @property {()=>CHAINAOM & []} clone
+ */

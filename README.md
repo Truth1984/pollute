@@ -5,7 +5,8 @@ map utils, boost productivity, prototype pollution, working progress
 ## example
 
 ```js
-let m = require("pollute");
+let { map, array } = require("pollute");
+let m = map;
 
 let item1 = m({ a: 15, b: 13 });
 let item2 = m({ c: 3, d: 156 });
@@ -16,6 +17,9 @@ item2.add({ h: 323 }, { h: 33 });
 
 console.log(item1, item2, item3);
 // { a: 15, b: 13, e: 13, f: 324 } { c: 3, d: 156, h: 33 } { d: 156, g: 16 }
+
+let item4 = array([0, 1, 2, 3, 4]);
+console.log(item4.remove(0, 1, 3).get(0, 1)); // [2,4]
 ```
 
 ## notice
@@ -99,3 +103,9 @@ else
 let item = m({ a: 10, b: 20 }, "_");
 item.map((key, val) => [key + 10, val], false); // output {a: 10, b: 20, a10: 10, b10: 20}
 ```
+
+---
+
+#### constructor
+
+array(input = {}, backup = "\_")
